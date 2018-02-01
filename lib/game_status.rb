@@ -14,13 +14,14 @@ WIN_COMBINATIONS = [
   [0,4,8],
   [2,4,6]
 ]
-def won?(board)
 
+
+def won?(board)
 
   i=0
   while i<WIN_COMBINATIONS.length
 
-     pos_1=board[WIN_COMBINATIONS[i][0]]
+     pos_1=board(WIN_COMBINATIONS[i][0])
       pos_2=board[WIN_COMBINATIONS[i][1]]
       pos_3=board[WIN_COMBINATIONS[i][2]]
 
