@@ -17,7 +17,6 @@ WIN_COMBINATIONS = [
 
 
 def won?(board)
-
   i=0
   while i<WIN_COMBINATIONS.length
 
@@ -26,7 +25,7 @@ def won?(board)
       pos_3=board[WIN_COMBINATIONS[i][2]]
 
   if pos_1 == "X" && pos_2 == "X" && pos_3 == "X"
-     WIN_COMBINATIONS[i] # return the win_combination indexes that won.
+    return WIN_COMBINATIONS[i] # return the win_combination indexes that won.
     break
   else
     false
